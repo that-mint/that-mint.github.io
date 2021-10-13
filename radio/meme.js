@@ -1,9 +1,7 @@
 var lastfmData = {
     baseURL:
       "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=",
-    // Your Last.fm Username
     user: "thatMint",
-    // Your API key
     yenah: "4f3da8a496ea9fb7506da00235cd1710",
     additional: "&format=json&limit=1"
   };
@@ -50,7 +48,5 @@ var lastfmData = {
     });
   };
   
-  // Get the new one.
   setfm();
-  // Start the countdown.
   setInterval(setfm, 10 * 1000);
